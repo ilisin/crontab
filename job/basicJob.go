@@ -2,10 +2,10 @@ package job
 
 import (
 	"time"
-	"imooly.com/crontab/executer"
-	"imooly.com/crontab/reference/coop"
+	"github.com/ilisin/crontab/executer"
+	"github.com/ilisin/crontab/reference/coop"
 	"errors"
-	"imooly.com/utility"
+	"github.com/astaxie/beego"
 )
 
 
@@ -62,7 +62,7 @@ func (bj BasicJob)Do() error {
 	if etr == nil {
 		panic("执行器错误")
 	}
-	utility.Debug("执行任务 : ID:",bj.Id," Name:",bj.Name)
+	beego.Debug("执行任务 : ID:",bj.Id," Name:",bj.Name)
 	_,err := etr.Exec(bj.Command,bj.Params)
 	if err != nil {
 		return err

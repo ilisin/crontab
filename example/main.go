@@ -1,9 +1,8 @@
 package main
 
 import (
-	"imooly.com/crontab"
+	"github.com/ilisin/crontab"
 	"time"
-	"imooly.com/utility"
 )
 
 var (
@@ -19,7 +18,6 @@ var (
 )
 
 func main(){
-	utility.SetLogger("file",logConfig)
 	crontab.Run()
 
 	time.Sleep(1 * time.Hour)

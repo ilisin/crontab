@@ -1,6 +1,8 @@
 package executer
 
-import "imooly.com/utility"
+import (
+	"github.com/astaxie/beego"
+)
 
 type Executer interface {
 	Exec(cmd string,params ...string) (chan bool,error)
@@ -14,6 +16,6 @@ func init(){
 
 
 func Demo() error{
-	utility.Trace("DEMO注册函数")
+	beego.Trace("DEMO注册函数")
 	return nil
 }

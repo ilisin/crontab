@@ -1,4 +1,0 @@
-2014/08/22 11:56:39 [basicJob.go:65] [D] 执行任务 :  定期查找任务 
-2014/08/22 11:56:39 [provider.go:49] [E] open /home/gaoguangting/go/src/imooly.com/crontab/example/data/20140822.json: no such file or directory 
-2014/08/22 11:56:44 [basicJob.go:65] [D] 执行任务 :  定期查找任务 
-2014/08/22 11:56:44 [provider.go:49] [E] open /home/gaoguangting/go/src/imooly.com/crontab/example/data/20140822.json: no such file or directory 

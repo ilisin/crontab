@@ -1,8 +1,8 @@
 package crontab
 
 import (
-	"imooly.com/crontab/provider"
-	"imooly.com/crontab/job"
+	"github.com/ilisin/crontab/provider"
+	"github.com/ilisin/crontab/job"
 )
 
 var s_engine Engine

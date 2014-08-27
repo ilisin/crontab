@@ -2,7 +2,7 @@ package provider
 
 import (
 	"time"
-	"imooly.com/crontab/job"
+	"github.com/ilisin/crontab/job"
 )
 
 type StorageProxyer interface {

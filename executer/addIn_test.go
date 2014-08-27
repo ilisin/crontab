@@ -2,15 +2,15 @@ package executer
 
 import (
 	"testing"
-	"imooly.com/utility"
+	"github.com/astaxie/beego"
 )
 
 func TestAddIn(t *testing.T) {
 	addIn := &AddIn{}
-	rc,err := addIn.Exec("/home/gaoguangting/go/src/imooly.com/hello")
+	rc,err := addIn.Exec("/usr/bin/sh")
 	if err != nil {
-		t.Error("回调错误")
+		t.Error("can't execute the command")
 	}
 	<-rc
-	utility.Trace("执行命令OK")
+	beego.Trace("excute ok")
 }

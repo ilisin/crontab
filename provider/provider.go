@@ -1,12 +1,12 @@
 package provider
 
 import (
-	"imooly.com/crontab/job"
+	"github.com/ilisin/crontab/job"
 	"path"
 	"os"
-	"imooly.com/utility"
 	"time"
-	"imooly.com/crontab/executer"
+	"github.com/ilisin/crontab/executer"
+	"github.com/astaxie/beego"
 )
 
 type Provider struct {
@@ -46,7 +46,7 @@ func (p Provider)getUpdaterJob() error{
 	p.proxy.date = dt
 	jbs,err := p.proxy.ReadJobs()
 	if err != nil {
-		utility.Error(err)
+		beego.Error(err)
 		return err
 	}
 	for _,j := range jbs{

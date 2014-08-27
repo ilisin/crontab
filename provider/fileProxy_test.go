@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 	"os"
-	"imooly.com/utility"
-	"imooly.com/crontab/job"
+	"github.com/ilisin/crontab/job"
 	"io"
+	"github.com/astaxie/beego"
 )
 
 func TestWriteJobs(t *testing.T){
@@ -69,7 +69,7 @@ func TestWriteJobs(t *testing.T){
 	if err != nil {
 		t.Fatal(err)
 	}
-	utility.Trace("写入job完成")
+	beego.Trace("写入job完成")
 }
 
 func copyFile(src, des string) error {
@@ -110,5 +110,5 @@ func TestRemove(t *testing.T){
 	if err != nil {
 		t.Fatal(err)
 	}
-	utility.Trace("删除job完成")
+	beego.Trace("删除job完成")
 }

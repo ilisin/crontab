@@ -7,7 +7,7 @@ import (
 	"path"
 	"io/ioutil"
 	"encoding/json"
-	"imooly.com/crontab/job"
+	"github.com/ilisin/crontab/job"
 )
 
 type FileProxy struct {
