@@ -1,0 +1,1 @@
+[{"Id":"TEST_JOB_003","Name":"测试任务3","ExeTime":"2014-08-22T13:37:05.295421424+08:00","Type":0,"Live":1,"Interval":0,"Command":"JOB_SYS_0001","Params":""},{"Id":"TEST_JOB_231","Name":"测试任务5","ExeTime":"2014-08-22T11:37:05.296311024+08:00","Type":2,"Live":1,"Interval":0,"Command":"yum install update","Params":""}]
